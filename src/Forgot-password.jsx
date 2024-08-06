@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { API_HOST_URL } from '../config';
 
 function ForgotPassword() {
   const [email, setEmail] = useState('');
@@ -12,7 +13,7 @@ function ForgotPassword() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:3000/api/forgot-password', {
+      const response = await fetch(`${API_HOST_URL}/3000/api/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })

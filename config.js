@@ -1,0 +1,1 @@
+export const API_HOST_URL = 'https://auth-backend-r2dz.onrender.com'

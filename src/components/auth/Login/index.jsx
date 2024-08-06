@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 import '../../../Forgot-password'
 import ForgotPassword from '../../../Forgot-password';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { API_HOST_URL } from '../../../../config';
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -24,7 +25,7 @@ function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/api/users/login', {
+      const response = await fetch(`${API_HOST_URL}/3000/api/users/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(

@@ -47,7 +47,7 @@ function ResetPassword() {
 
         setIsLoading(true);
         try {
-            const response = await fetch(`http://localhost:3000/api/users/reset-password`, {
+            const response = await fetch(`${API_HOST_URL}/3000/api/users/reset-password`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ token, newPassword: password })
