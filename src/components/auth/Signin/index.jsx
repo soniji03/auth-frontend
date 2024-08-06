@@ -6,6 +6,7 @@ import '../Login'
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { API_HOST_URL } from '../../../../config';
 
 const SignUpPage = () => {
   const [isChecked, setIsChecked] = useState(false);

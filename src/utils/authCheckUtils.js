@@ -1,3 +1,5 @@
+import { API_HOST_URL } from "../../config";
+
 export async function authCheck(){
     try {
         let userData = localStorage?.getItem('userData');
