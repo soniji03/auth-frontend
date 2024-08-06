@@ -17,7 +17,7 @@ const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-  const apiUrl = `${API_HOST_URL}/3000/api/users/register`;
+  const apiUrl = `${API_HOST_URL}/api/users/register`;
   console.log(apiUrl, "jjjhhjh")
   const navigate = useNavigate();
 
